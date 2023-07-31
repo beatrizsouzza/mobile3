@@ -56,8 +56,32 @@
 
     <div class="swiper">
     </div class="swiper-pagination"></div>
-</selection>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="Img/ApacheKafka.svg" alt="Livro sobre Apache Kafta"></div>
+        <div class="swiper-slide"><img src="Img/Liderança.svg" alt="Livro sobre Liderança"></div>
+        <div class="swiper-slide"><img src="Img/Javascript.svg" alt="Livro sobre Jabasscript"></div>
+        <div class="swiper-slide"><img src="Img/Guia Front-end.svg" alt="Livro sobre Frount-end"></div>
+        <div class="swiper-slide"><img src="Img/Portugol.svg" alt="Livro sobre Portugol"></div>
+        <div class="swiper-slide"><img src="Img/Acessibilidade.svg" alt="Livro sobre Acessibilidade"></div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 
+</div>
+</selection>
+<!--Segundo link do carrossel-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper',{
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination:  {
+            el: 'swiper-pagination',
+            type: 'bullets',
+        },
+    });
+</script>
 
 </body>
 </html>
